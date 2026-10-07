@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src = "https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @font-face {
+      font-family: "Figtree";
+      src: url("./assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype"); 
+      font-weight: 300 900;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @theme {
+      --font-figtree: "Figtree", sans-serif;
+      --color-yellow: hsl(47, 88%, 63%);
+      --color-gray-500: hsl(0, 0%, 42%);
+      --color-gray-900: hsl(0, 0%, 7%);
+    }
+  </style>
+  <title>Frontend Mentor | Blog preview card</title>
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class = "bg-yellow font-figtree min-h-screen font-medium flex flex-col">
+  <main class = "flex flex-1 justify-center items-center">
+    <article class = "bg-white w-full max-w-[384px] h-[522px] rounded-[20px] border border-gray-900 shadow-gray-900 shadow-[8px_8px_0px_0px] p-[24px] ">
+      <img src="assets/images/illustration-article.svg" alt="illustration" class = "rounded-t-[10px] mb-6">
+      <div>
+        <span class="inline-block bg-yellow w-[82px] h-[29px] text-center py-[4px] px-[12px] rounded-sm font-extrabold text-[14px] mb-[10px] ">
+          Learning
+        </span>
+        <time datetime="2023-12-21" class = "block text-[14px] leading-[21px] mb-[10px] text-gray-900">Published 21 Dec 2023</time>
+        <h1 class = "font-extrabold leading-[36px] text-[24px] text-gray-900 mb-[13px]"><a href="#" class = "hover:text-yellow focus-visible:text-yellow  transition-colors">HTML & CSS foundations</a></h1>
+        <p class = "text-[16px] leading-[24px] text-gray-500">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      </div>
+
+      <footer class = "w-[129px] h-[32px] flex flex-row items-center gap-[12px] mt-[25px] py-4">
+        <img src="assets/images/image-avatar.webp" class = "rounded-full w-[32px] h-[32px] ">
+        <p class = "text-gray-900 font-extrabold text-[14px] leading-[21px]">Greg Hooper</p>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Rovy</a>.
+  </footer>
+</body>
+</html>
